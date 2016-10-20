@@ -1,0 +1,49 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "API\n\n\n\n\nFrontpage layout.\n\n\nAll categories\n\n\nSingle category\n\n\nSingle news\n\n\nComments for single news\n\n\nAll pages\n\n\nSingle page\n\n\n\n\nFrontpage layout\n\n\nLink        :    http://www.novaborba.rs/api/v1/frontpages\n\nDescription :    Current mobile layout with 15 news in order.\n\nReturn      :    - news title\n                 - news slug\n                 - news summary\n                 - news images (full, thumb_mid and thumb)\n\n\n\nAll categories\n\n\nLink        :    http://www.novaborba.rs/api/v1/categories\n\nDescription :    All news categories.\n\nReturn      :    - category title\n                 - category slug\n                 - category ordering\n                 - category color\n                 - category link\n\n\n\nSingle category\n\n\nLink        :    http://www.novaborba.rs/api/v1/category/CATEGORY SLUG\n\nPagination  :    http://www.novaborba.rs/api/v1/category/CATEGORY SLUG/?page=1\n\nDescription :    All news with details in this category with pagination ( 15 news per page ).\n\nReturn      :    - news title\n                 - news slug\n                 - news summary\n                 - news content\n                 - news views\n                 - created ( datetime obj )\n                 - last update ( datetime obj )\n                 - news images (full, thumb_mid and thumb)\n\n\n\nSingle news\n\n\nLink        :    http://www.novaborba.rs/api/v1/post/NEWS SLUG\n\nDescription :    All details for single news.\n\nReturn      :    - news title\n                 - news slug\n                 - news summary\n                 - news content\n                 - news views\n                 - created ( datetime obj )\n                 - last update ( datetime obj )\n                 - news images (full, thumb_mid and thumb)\n\n\n\nComments for single news\n\n\nLink        :    http://www.novaborba.rs/api/v1/comments/NEWS SLUG\n\nPagination  :    http://www.novaborba.rs/api/v1/comments/NEWS SLUG/?page=1\n\nDescription :     Comments for single news with pagination ( 10 comments per page ).\n\nReturn      :    - comment author name\n                 - comment content\n                 - created ( datetime obj )\n                 - comment number of LIKES\n                 - comments number of DISLIKES\n\n\n\nAll pages\n\n\nLink        :    http://www.novaborba.rs/api/v1/pages\n\nDescription :    All pages with details for every page.\n\nReturn      :    - page title\n                 - page slug\n                 - page summary\n                 - page content\n                 - page link\n                 - page views\n                 - created ( datetime obj )\n                 - last update ( datetime obj )\n                 - page images (full, thumb_mid and thumb)\n\n\n\nSingle page\n\n\nLink        :    http://www.novaborba.rs/api/v1/page/PAGE SLUG\n\nDescription :    Single page with all details.\n\nReturn      :    - page title\n                 - page slug\n                 - page summary\n                 - page content\n                 - page link\n                 - page views\n                 - created ( datetime obj )\n                 - last update ( datetime obj )\n                 - page images (full, thumb_mid and thumb)", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#api", 
+            "text": "Frontpage layout.  All categories  Single category  Single news  Comments for single news  All pages  Single page", 
+            "title": "API"
+        }, 
+        {
+            "location": "/#frontpage-layout", 
+            "text": "Link        :    http://www.novaborba.rs/api/v1/frontpages\n\nDescription :    Current mobile layout with 15 news in order.\n\nReturn      :    - news title\n                 - news slug\n                 - news summary\n                 - news images (full, thumb_mid and thumb)", 
+            "title": "Frontpage layout"
+        }, 
+        {
+            "location": "/#all-categories", 
+            "text": "Link        :    http://www.novaborba.rs/api/v1/categories\n\nDescription :    All news categories.\n\nReturn      :    - category title\n                 - category slug\n                 - category ordering\n                 - category color\n                 - category link", 
+            "title": "All categories"
+        }, 
+        {
+            "location": "/#single-category", 
+            "text": "Link        :    http://www.novaborba.rs/api/v1/category/CATEGORY SLUG\n\nPagination  :    http://www.novaborba.rs/api/v1/category/CATEGORY SLUG/?page=1\n\nDescription :    All news with details in this category with pagination ( 15 news per page ).\n\nReturn      :    - news title\n                 - news slug\n                 - news summary\n                 - news content\n                 - news views\n                 - created ( datetime obj )\n                 - last update ( datetime obj )\n                 - news images (full, thumb_mid and thumb)", 
+            "title": "Single category"
+        }, 
+        {
+            "location": "/#single-news", 
+            "text": "Link        :    http://www.novaborba.rs/api/v1/post/NEWS SLUG\n\nDescription :    All details for single news.\n\nReturn      :    - news title\n                 - news slug\n                 - news summary\n                 - news content\n                 - news views\n                 - created ( datetime obj )\n                 - last update ( datetime obj )\n                 - news images (full, thumb_mid and thumb)", 
+            "title": "Single news"
+        }, 
+        {
+            "location": "/#comments-for-single-news", 
+            "text": "Link        :    http://www.novaborba.rs/api/v1/comments/NEWS SLUG\n\nPagination  :    http://www.novaborba.rs/api/v1/comments/NEWS SLUG/?page=1\n\nDescription :     Comments for single news with pagination ( 10 comments per page ).\n\nReturn      :    - comment author name\n                 - comment content\n                 - created ( datetime obj )\n                 - comment number of LIKES\n                 - comments number of DISLIKES", 
+            "title": "Comments for single news"
+        }, 
+        {
+            "location": "/#all-pages", 
+            "text": "Link        :    http://www.novaborba.rs/api/v1/pages\n\nDescription :    All pages with details for every page.\n\nReturn      :    - page title\n                 - page slug\n                 - page summary\n                 - page content\n                 - page link\n                 - page views\n                 - created ( datetime obj )\n                 - last update ( datetime obj )\n                 - page images (full, thumb_mid and thumb)", 
+            "title": "All pages"
+        }, 
+        {
+            "location": "/#single-page", 
+            "text": "Link        :    http://www.novaborba.rs/api/v1/page/PAGE SLUG\n\nDescription :    Single page with all details.\n\nReturn      :    - page title\n                 - page slug\n                 - page summary\n                 - page content\n                 - page link\n                 - page views\n                 - created ( datetime obj )\n                 - last update ( datetime obj )\n                 - page images (full, thumb_mid and thumb)", 
+            "title": "Single page"
+        }
+    ]
+}

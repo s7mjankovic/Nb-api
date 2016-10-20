@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+	<title>Nova Borba API</title>
+
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">Nova Borba API</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#api">API</a></li>
+        
+    
+        <li class="main "><a href="#frontpage-layout">Frontpage layout</a></li>
+        
+    
+        <li class="main "><a href="#all-categories">All categories</a></li>
+        
+    
+        <li class="main "><a href="#single-category">Single category</a></li>
+        
+    
+        <li class="main "><a href="#single-news">Single news</a></li>
+        
+    
+        <li class="main "><a href="#comments-for-single-news">Comments for single news</a></li>
+        
+    
+        <li class="main "><a href="#all-pages">All pages</a></li>
+        
+    
+        <li class="main "><a href="#single-page">Single page</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<!-- - Welcome to Nova Borba API -->
+
+<h2 id="api">API</h2>
+<ul>
+<li>Frontpage layout.</li>
+<li>All categories</li>
+<li>Single category</li>
+<li>Single news</li>
+<li>Comments for single news</li>
+<li>All pages</li>
+<li>Single page</li>
+</ul>
+<h2 id="frontpage-layout">Frontpage layout</h2>
+<pre><code>Link        :    http://www.novaborba.rs/api/v1/frontpages
+
+Description :    Current mobile layout with 15 news in order.
+
+Return      :    - news title
+                 - news slug
+                 - news summary
+                 - news images (full, thumb_mid and thumb)
+</code></pre>
+<h2 id="all-categories">All categories</h2>
+<pre><code>Link        :    http://www.novaborba.rs/api/v1/categories
+
+Description :    All news categories.
+
+Return      :    - category title
+                 - category slug
+                 - category ordering
+                 - category color
+                 - category link
+</code></pre>
+<h2 id="single-category">Single category</h2>
+<pre><code>Link        :    http://www.novaborba.rs/api/v1/category/CATEGORY SLUG
+
+Pagination  :    http://www.novaborba.rs/api/v1/category/CATEGORY SLUG/?page=1
+
+Description :    All news with details in this category with pagination ( 15 news per page ).
+
+Return      :    - news title
+                 - news slug
+                 - news summary
+                 - news content
+                 - news views
+                 - created ( datetime obj )
+                 - last update ( datetime obj )
+                 - news images (full, thumb_mid and thumb)
+</code></pre>
+<h2 id="single-news">Single news</h2>
+<pre><code>Link        :    http://www.novaborba.rs/api/v1/post/NEWS SLUG
+
+Description :    All details for single news.
+
+Return      :    - news title
+                 - news slug
+                 - news summary
+                 - news content
+                 - news views
+                 - created ( datetime obj )
+                 - last update ( datetime obj )
+                 - news images (full, thumb_mid and thumb)
+</code></pre>
+<h2 id="comments-for-single-news">Comments for single news</h2>
+<pre><code>Link        :    http://www.novaborba.rs/api/v1/comments/NEWS SLUG
+
+Pagination  :    http://www.novaborba.rs/api/v1/comments/NEWS SLUG/?page=1
+
+Description :     Comments for single news with pagination ( 10 comments per page ).
+
+Return      :    - comment author name
+                 - comment content
+                 - created ( datetime obj )
+                 - comment number of LIKES
+                 - comments number of DISLIKES
+</code></pre>
+<h2 id="all-pages">All pages</h2>
+<pre><code>Link        :    http://www.novaborba.rs/api/v1/pages
+
+Description :    All pages with details for every page.
+
+Return      :    - page title
+                 - page slug
+                 - page summary
+                 - page content
+                 - page link
+                 - page views
+                 - created ( datetime obj )
+                 - last update ( datetime obj )
+                 - page images (full, thumb_mid and thumb)
+</code></pre>
+<h2 id="single-page">Single page</h2>
+<pre><code>Link        :    http://www.novaborba.rs/api/v1/page/PAGE SLUG
+
+Description :    Single page with all details.
+
+Return      :    - page title
+                 - page slug
+                 - page summary
+                 - page content
+                 - page link
+                 - page views
+                 - created ( datetime obj )
+                 - last update ( datetime obj )
+                 - page images (full, thumb_mid and thumb)
+</code></pre></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script>var base_url = '.';</script>
+        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+        <script src="./js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 0.15.3
+Build Date UTC : 2016-10-20 14:48:03.613000
+-->
